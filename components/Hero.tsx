@@ -28,7 +28,7 @@ export default function Hero({ header, text, images }: HeroProps) {
         </div>
         <div className='flex flex-row items-start gap-[141px] overflow-hidden px-[120px]'>
           {images.map((image) => (
-            <Image src={urlFor(image).width(749).height(342).url()} alt='Image' width={749} height={342}/>
+            <Image key={urlFor(image).toString()} src={urlFor(image).width(749).height(342).url()} alt='Image' width={749} height={342}/>
           ))}
         </div>
       </div>

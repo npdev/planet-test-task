@@ -2,6 +2,7 @@ import Image from 'next/image';
 import imageUrlBuilder from '@sanity/image-url'
 import client from '@/sanity/sanity-client'
 import type { Image as ImageType } from 'sanity'
+import Button from '@/components/Button';
 
 const imageBuilder = imageUrlBuilder(client)
 
@@ -24,7 +25,7 @@ export default function Hero({ header, text, images }: HeroProps) {
             <h1 className='text-[40px] uppercase leading-[48px] font-normal font-audrey not-italic'>{header}</h1>
             <p className='text-[18px] font-normal leading-[160%] not-italic font-josefin'>{text}</p>
           </div>
-          <button className='flex flex-col content-center items-start text-center text-[13px] leading-[16px] px-[32px] pt-[14px] pb-[12px] w-[133px] md:w-auto h-[42px] box-border border-solid border border-[#03110E] font-josefin'>Create your own</button>
+          <Button text='Create your own' />
         </div>
         <div className='flex flex-row items-start gap-[141px] overflow-hidden px-[120px]'>
           {images.map((image) => (

@@ -17,6 +17,12 @@ export type SectionCards = {
     buttonText: string
   }
 }
+export type Card = {
+  image: Image,
+  header: string,
+  text: string,
+  buttonText: string
+}
 
 export type SectionText = {
   _type: string,

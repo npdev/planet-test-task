@@ -7,7 +7,7 @@ type NavItemProps = {
 }
 
 function NavItem(props: NavItemProps) {
-  return <Link href="/" className='align-middle'>{props.name}</Link>
+  return <Link href='/' className='align-middle nav-links'>{props.name}</Link>
 }
 
 function Logo() {
@@ -16,7 +16,7 @@ function Logo() {
 
 function Navbar() {
   return (
-    <header className='flex items-center gap-x-[76px] justify-center columns-5 h-[119px] w-full bg-[#C4EBF8] font-josefin'>
+    <header className='z-10 absolute flex items-center gap-x-[76px] justify-center columns-5 h-[119px] w-full font-josefin'>
       <NavItem name='COMMERCIAL' />
       <NavItem name='TOURERS' />
       <Logo />

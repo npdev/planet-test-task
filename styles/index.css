@@ -2,8 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+@font-face {
+    font-family: Audrey;
+    src: url('../assets/fonts/Audrey-Medium.otf');
+}
+
+@font-face {
+    font-family: Josefin;
+    src: url('../assets/fonts/JosefinSans-VariableFont_wght.ttf');
+}
+
+/* Desktop/Nav */
+.nav-links {
+    font-family: 'Josefin', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+/* Desktop/Heading 1 */
+h1 {
+    font-family: 'Audrey', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 11px;
+    text-transform: uppercase;
+    color: #03110E;
+}
+
+/* Desktop/Heading 2 */
+h2 {
+    font-family: 'Josefin', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 46px;
+    line-height: 118.6%;
+    letter-spacing: -1px;
+    color: #03110E;
+}
+
+/* Desktop/Heading 3 */
 h3 {
-    font-family: 'Audrey';
+    font-family: 'Audrey', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -13,4 +72,87 @@ h3 {
     text-align: center;
     letter-spacing: 10px;
     text-transform: uppercase;
+    color: #03110E;
+}
+
+/* Desktop/Heading 4 */
+h4 {
+    font-family: 'Audrey', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #03110E;
+}
+
+/* Desktop/Heading 5 */
+h5 {
+    font-family: 'Audrey', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: #03110E;
+}
+
+/* Desktop/Paragraph */
+.paragraph {
+    font-family: 'Josefin', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: #03110E;
+}
+
+/* Desktop/Button */
+.d-button-text {
+    font-family: 'Josefin', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+}
+.d-button-text-price {
+    font-family: 'Josefin', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 16px;
+}
+
+label {
+    font-family: 'Audrey', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: #03110E;
+}
+
+/* Desktop/Footer */
+.footer {
+    font-family: 'Josefin', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.left-card {
+    background-color: #C4EBF8;
+}
+
+.right-card {
+    background-color: rgba(177, 79, 37, 0.08);
 }

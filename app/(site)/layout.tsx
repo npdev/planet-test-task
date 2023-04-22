@@ -1,8 +1,6 @@
 import localFont from 'next/font/local'
 import '../globals.css'
 import '@/styles/index.css'
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer';
 import Head from 'next/head'
 
 export const metadata = {
@@ -26,14 +24,12 @@ export default function RootLayout({children}: {
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${JosefinSans.variable} ${Audrey.variable}`}>
+    <html lang="en" className={`${JosefinSans.variable} ${Audrey.variable} font-sans`}>
     <Head>
       <meta charSet="utf-8" />
     </Head>
     <body className="max-w-[1440px] mx-auto">
-    <Navbar />
     <main>{children}</main>
-    <Footer />
     </body>
     </html>
   )
